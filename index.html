@@ -10,20 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Jam Box Studios",
-      "url": "https://tusitio.github.io",
-      "logo": "https://tusitio.github.io/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-613-000-0000",
-        "contactType": "customer service"
-      }
-    }
-    </script>
+  <script type="application/ld+json"></script>
 </head>
 
 <body>
@@ -39,7 +26,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://picsum.photos/1200/900" alt="A field" class="banner">
+      <img src="https://picsum.photos/1200/900" alt="Random Image" class="banner">
     </header>
     <main class="main-content" id="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -47,19 +34,19 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <section class="owner">
         <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
-          <li>Phone: <a href="tel:613-000-0000">613-000-0000</a></li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+          <li itemprop="phoneNumber">Phone: <a href="tel:613-000-0000">613-000-0000</a></li>
         </ul>
         <h1>Address</h1>
-        <p>
-          Jambox Studios<br>
-          123 Guitar Road,<br>
-          Musicville, Danceistan<br>
-          B3T 0L0
-        </p>
+        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="companyName">Jambox Studios </span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressCountry">Musicville, Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
+        </li>
       </section>
       <section class="contact-section">
         <h1>Contact Us</h1>
