@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: #63A1B6;
+  color: #020227;
   margin: 0;
   padding: 0;
 }
@@ -42,6 +43,15 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: #020227; 
+  color: #63A1B6; 
+  outline: none; 
 }
 
 form input,
@@ -50,6 +60,17 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  border: 1px solid #020227;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #020227; 
+  color: #ffffff;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #63A1B6; 
+  outline: 2px solid #63A1B6; 
 }
 
 form textarea {
@@ -61,11 +82,39 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid #020227;
   padding: 1rem;
   text-transform: uppercase;
+  color: #020227;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #020227; 
+  color: #63A1B6; 
+  outline: none; 
 }
 
 .site-footer {
   padding: 2rem 0;
+  color: #020227;
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #020227;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #020227;
 }
