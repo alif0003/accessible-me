@@ -1,0 +1,120 @@
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #63A1B6;
+  color: #020227;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.main-nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: #020227; 
+  color: #63A1B6; 
+  outline: none; 
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid #020227;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #020227; 
+  color: #ffffff;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #63A1B6; 
+  outline: 2px solid #63A1B6; 
+}
+
+form textarea {
+  min-height: 150px;
+  max-height: 150px;
+  height: 150px;
+  resize: none;
+}
+
+form button {
+  background: none;
+  border: 2px solid #020227;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #020227;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #020227; 
+  color: #63A1B6; 
+  outline: none; 
+}
+
+.site-footer {
+  padding: 2rem 0;
+  color: #020227;
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #020227;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #020227;
+}
